@@ -14,7 +14,6 @@ object Demo1 {
     else { //println("In else loop")
       return b
     }
-
   }
 def main(args: Array[String]): Unit = {
   println("In Main func")

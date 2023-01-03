@@ -1,13 +1,6 @@
 package com.aparna.scala
-
 object Demo1 {
-
-  def main(args:Array[String]): Unit = {
-    println("In Main func")
-    println("Number closer to 100 is :" + Close100(110, 30))
-  }
-
-  def Close100(a: Int, b: Int): Int = {
+ def Close100(a: Int, b: Int): Int = {
     val diff_a: Int = (100 - a).abs
     val diff_b: Int = (100 - b).abs
     //print("Diffb"+diff_b)
@@ -22,5 +15,9 @@ object Demo1 {
       return b
     }
 
+  }
+def main(args: Array[String]): Unit = {
+  println("In Main func")
+  println("Number closer to 100 is :" + Demo1.Close100(110, 30))
   }
 }

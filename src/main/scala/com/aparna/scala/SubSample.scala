@@ -10,9 +10,12 @@ object SubSample {
 
   def main(args: Array[String]): Unit = {
     println("In Main")
-    //The string input is India, thus "In" is repeated for 4 times as mentioned in the function call
-    val str3= "India"
+    //Reading input values from user
+    println("Input Sample String: ")
+    var str3 = scala.io.StdIn.readLine()
+    println("Input n value: ")
+    var nval = scala.io.StdIn.readInt()
     println("Input: "+ str3)
-    println("Output: "+ SubSample.SubSampleString(str3,4))
+    println("Output: "+ SubSample.SubSampleString(str3,nval))
   }
 }

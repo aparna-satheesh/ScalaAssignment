@@ -3,9 +3,9 @@ package com.aparna.scala
 object SubSample {
   def SubSampleString(str:String, n: Int):String= {
     //The func extracts 2 chars from the string and displays it n number of times
-    val str1 = str.substring(0, 2)
-    val str2 = str1 * n
-    return str2
+      if (str.length < 2) str
+      else str.substring(0, 2) * n
+
   }
 
   def main(args: Array[String]): Unit = {

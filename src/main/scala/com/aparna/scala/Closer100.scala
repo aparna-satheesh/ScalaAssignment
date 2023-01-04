@@ -1,5 +1,5 @@
 package com.aparna.scala
-object Demo1 {
+object Closer100 {
  def Close100(a: Int, b: Int): Int = {
     val diff_a: Int = (100 - a).abs
     val diff_b: Int = (100 - b).abs
@@ -17,6 +17,9 @@ object Demo1 {
   }
 def main(args: Array[String]): Unit = {
   println("In Main func")
-  println("Number closer to 100 is :" + Demo1.Close100(110, 30))
+  println("Enter 2 numbers: ")
+  var val1 = scala.io.StdIn.readInt()
+  var val2 = scala.io.StdIn.readInt()
+  println("Number closer to 100 is :" + Closer100.Close100(val1, val2))
   }
 }

@@ -15,7 +15,7 @@ object GreatestElement {
     arr;
   }
   def main(args: Array[String]): Unit = {
-    val nums = Array(9, 5, 8, 4, -10, 21, 6, 17, 11)
+    val nums = Array(9,21,11,8,7,14)
     println("Original array:");
     for (x <- nums) {
       print(s"${x}, ")    }
